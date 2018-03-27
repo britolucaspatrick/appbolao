@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Bolão Toledo</string>
+
+    <string name="navigation_drawer_open">Abrir navegação drawer</string>
+    <string name="navigation_drawer_close">Fechar navegação drawer</string>
+
+    <string name="action_logout">Sair</string>
+    <string name="title_activity_login">LoginActivity</string>
+
+    <!-- Layout login -->
+    <string name="user">Usuário</string>
+    <string name="password">Senha</string>
+    <string name="recoverPassword">Esqueceu sua senha?</string>
+    <string name="btLogin">Entrar</string>
+    <string name="btRegister">Cadastrar</string>
+    <string name="title_activity_register">RegisterActivity</string>
+
+    <!-- Layout register -->
+    <string name="email">E-mail</string>
+    <string name="name">Nome</string>
+    <string name="confirm_password">Confirme a senha</string>
+    <string name="confirm">Confirmar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="date">Data de Nascimento</string>
+    <string name="title_activity_recover_password">RecoverPasswordActivity</string>
+
+    <!-- Layout Recover Password -->
+    <string name="submit">Enviar</string>
+
+    <!-- Layout Activity Main Drawer -->
+    <string name="palpitar">Palpitar</string>
+    <string name="class_brasileirao">Classificação Brasileirão</string>
+    <string name="class_bolao">Classificação Bolão</string>
+    <string name="rod_pessoal">Rodadas Pessoal</string>
+    <string name="est_jogadores">Estatísticas Jogadores</string>
+    <string name="est_pessoal">Estatísticas Pessoal</string>
+    <string name="my_account">Minha Conta</string>
+    <string name="preference">Preferência</string>
+    <string name="report_error">Reportar Erro</string>
+    <string name="about_app">Sobre o App</string>
+
+    <!-- Title toolbal activityes -->
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_rodadaspessoais">Rodadas Pessoais</string>
+    <string name="title_activity_classbrasileirao">Classificação Brasileirão</string>
+    <string name="title_activity_classbolao">Classificação Bolão</string>
+    <string name="title_activity_estjogadores">Estatísticas Jogadores</string>
+    <string name="title_activity_estpessoal">Estatísticas Pessoal</string>
+    <string name="title_activity_myaccount">Minha Conta</string>
+    <string name="title_activity_preferencia">Preferência</string>
+    <string name="title_activity_reporterror">Reportar Erro</string>
+    <string name="title_activity_aboutapp">Sobre o App</string>
+    <string name="title_activity_administer">Administração</string>
+
+    <!-- Layout Activity About App -->
+    <string name="versionApp">Versão do Aplicativo:</string>
+    <string name="versionAndroid">Versão do Android:</string>
+    <string name="developers">Desenvolvedores:</string>
+
+    <!-- Layout tab_palpite -->
+    <string name="rodada">Rodada</string>
+    <string name="title_activity_palpitar1">Palpitar</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- Layout_item_list_classificacao -->
+    <string name="colocacao">1</string>
+    <string name="time">Time</string>
+    <string name="pontuacao">Pontos</string>
+
+
+</resources>

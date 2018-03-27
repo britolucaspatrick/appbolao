@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.patri.appbolaoprojeto">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="DATABASE"
+            android:value="sugar_example.db" />
+        <meta-data
+            android:name="VERSION"
+            android:value="2" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="com.example.patri.appbolaoprojeto" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RecoverPasswordActivity"
+            android:label="@string/title_activity_recover_password"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ClassbrasileiraoActivity"
+            android:label="@string/title_activity_classbrasileirao" />
+        <activity
+            android:name=".ClassbolaoActivity"
+            android:label="@string/title_activity_classbolao" />
+        <activity
+            android:name=".RodadaspessoaisActivity"
+            android:label="@string/title_activity_rodadaspessoais" />
+        <activity
+            android:name=".EstjogadoresActivity"
+            android:label="@string/title_activity_estjogadores" />
+        <activity
+            android:name=".EstpessoalActivity"
+            android:label="@string/title_activity_estpessoal" />
+        <activity
+            android:name=".MyaccountActivity"
+            android:label="@string/title_activity_myaccount" />
+        <activity
+            android:name=".PreferenciaActivity"
+            android:label="@string/title_activity_preferencia" />
+        <activity
+            android:name=".ReporterrorActivity"
+            android:label="@string/title_activity_reporterror" />
+        <activity
+            android:name=".AboutappActivity"
+            android:label="@string/title_activity_aboutapp" />
+        <activity
+            android:name=".AdministerActivity"
+            android:label="@string/title_activity_administer" />
+        <activity
+            android:name=".Palpitar1Activity"
+            android:label="@string/title_activity_palpitar1"/>
+
+    </application>
+
+</manifest>

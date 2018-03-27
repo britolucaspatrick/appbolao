@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_palpitar"
+            android:icon="@drawable/ic_palpitar"
+            android:title="@string/palpitar" />
+        <item
+            android:id="@+id/nav_class_brasileirao"
+            android:icon="@drawable/ic_classificacao_brasileirao"
+            android:title="@string/class_brasileirao" />
+        <item
+            android:id="@+id/nav_class_bolao"
+            android:icon="@drawable/ic_classificacao_bolao"
+            android:title="@string/class_bolao" />
+        <item
+            android:id="@+id/nav_rod_pessoal"
+            android:icon="@drawable/ic_rodadas_pessoal"
+            android:title="@string/title_activity_rodadaspessoais" />
+        <item
+            android:id="@+id/nav_est_jogadores"
+            android:icon="@drawable/ic_estatisticas_jogadores"
+            android:title="@string/est_jogadores" />
+        <item
+            android:id="@+id/nav_est_pessoal"
+            android:icon="@drawable/ic_estatisticas_pessoal"
+            android:title="@string/est_pessoal" />
+        <item
+            android:id="@+id/nav_my_account"
+            android:icon="@drawable/ic_minha_conta"
+            android:title="@string/my_account" />
+        <item
+            android:id="@+id/nav_pref"
+            android:icon="@drawable/ic_preferencias"
+            android:title="@string/preference" />
+        <item
+            android:id="@+id/nav_report_error"
+            android:icon="@drawable/ic_reportar_erro"
+            android:title="@string/report_error" />
+        <item
+            android:id="@+id/nav_about_app"
+            android:icon="@drawable/ic_sobre"
+            android:title="@string/about_app" />
+    </group>
+
+</menu>

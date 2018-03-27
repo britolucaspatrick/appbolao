@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.patri.appbolaoprojeto.LoginActivity"
+    tools:showIn="@layout/activity_login">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/etUserLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="100dp"
+                android:layout_centerVertical="true"
+                android:hint="@string/user"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="15" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/etPasswordLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:hint="@string/password"
+                android:maxLines="1"
+                android:inputType="textPassword"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="15" />
+
+            <TextView
+                android:id="@+id/tvRecoverPasswordLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="25dp"
+                android:textColor="@color/recoverPassword"
+                android:text="@string/recoverPassword"/>
+
+            <LinearLayout
+                android:id="@+id/llButtonsLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="25dp"
+                android:gravity="center">
+                <info.hoang8f.widget.FButton
+                    android:id="@+id/btEnterLogin"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btLogin"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="@color/fbutton_color_emerald"/>
+                <info.hoang8f.widget.FButton
+                    android:id="@+id/btRegisterLogin"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btRegister"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="@color/fbutton_color_emerald"/>
+            </LinearLayout>
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/btSignGoogleLogin"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llButtons"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center">
+    </com.google.android.gms.common.SignInButton>
+
+</LinearLayout>

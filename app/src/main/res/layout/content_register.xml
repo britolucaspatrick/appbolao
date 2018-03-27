@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.patri.appbolaoprojeto.RegisterActivity"
+    tools:showIn="@layout/activity_register">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/etNameRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        app:met_floatingLabel="highlight"
+        app:met_maxCharacters="15" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/etUserRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_gravity="center"
+        android:hint="@string/user"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        app:met_floatingLabel="highlight"
+        app:met_maxCharacters="15" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/etEmailRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_gravity="center"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        app:met_floatingLabel="highlight"
+        app:met_maxCharacters="50" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/etPasswordRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_centerVertical="true"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        app:met_floatingLabel="highlight"
+        app:met_maxCharacters="15" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/etConfirmePasswordRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_gravity="center"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        app:met_floatingLabel="highlight"
+        app:met_maxCharacters="15" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/etDateNascRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_gravity="center"
+        android:inputType="date"
+        android:hint="@string/date"
+        android:ems="10"/>
+    
+    <LinearLayout
+        android:id="@+id/llButtonsRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:gravity="center">
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btConfirmRegister"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm"
+            android:layout_marginEnd="5dp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/fbutton_color_emerald"/>
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btCancelRegister"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/fbutton_color_alizarin"/>
+    </LinearLayout>
+
+</LinearLayout>

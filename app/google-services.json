@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "896899309672",
+    "firebase_url": "https://appbolao-d8fff.firebaseio.com",
+    "project_id": "appbolao-d8fff",
+    "storage_bucket": "appbolao-d8fff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:896899309672:android:23f8de94df8af171",
+        "android_client_info": {
+          "package_name": "com.example.patri.appbolaoprojeto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "896899309672-6mmbve0gq9nj0ia9ch4uv97p078k9oc1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.patri.appbolaoprojeto",
+            "certificate_hash": "17ea7ee3cb81dc0b6fd819fda06a68101705a576"
+          }
+        },
+        {
+          "client_id": "896899309672-oll6ras3gspshann06q91gus9jugs0c7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtXEfukrXRHoXjMBCI5yUbmSwp3yDuYTQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "896899309672-oll6ras3gspshann06q91gus9jugs0c7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

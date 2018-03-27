@@ -1,0 +1,11 @@
+#Internal package file, do not edit.
+#Mon Mar 26 23:01:25 BRT 2018
+1.base=C\:\\Users\\patri\\Desktop\\Bolao-20180326T124005Z-001-20180326T220744Z-001\\Bolao-20180326T124005Z-001\\Bolao\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\27
+0.baseType=DIRECTORY
+1.baseType=DIRECTORY
+count=2
+1.set=DEX
+0.path=classes.dex
+0.set=DEX
+0.base=C\:\\Users\\patri\\Desktop\\Bolao-20180326T124005Z-001-20180326T220744Z-001\\Bolao-20180326T124005Z-001\\Bolao\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\26
+1.path=classes.dex
