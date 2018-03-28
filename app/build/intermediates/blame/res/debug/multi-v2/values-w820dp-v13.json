@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\patri\\Desktop\\Bolao-20180326T124005Z-001-20180326T220744Z-001\\Bolao-20180326T124005Z-001\\Bolao\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
+            "outputFile": "C:\\Users\\patri\\Desktop\\Projetos\\appbolao\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\patri\\Desktop\\Bolao-20180326T124005Z-001-20180326T220744Z-001\\Bolao-20180326T124005Z-001\\Bolao\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
+                    "source": "C:\\Users\\patri\\Desktop\\Projetos\\appbolao\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "4",

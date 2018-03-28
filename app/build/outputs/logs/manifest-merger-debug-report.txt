@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:2:1-85:12
-INJECTED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:2:1-85:12
-INJECTED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:2:1-85:12
-INJECTED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:2:1-85:12
+ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:2:1-85:12
+INJECTED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:2:1-85:12
+INJECTED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:2:1-85:12
+INJECTED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:2:1-85:12
 MERGED from [com.rengwuxian.materialedittext:library:2.1.4] C:\Users\patri\.gradle\caches\transforms-1\files-1.1\library-2.1.4.aar\3094332c55b8e230ade3519ae10f87a1\AndroidManifest.xml:2:1-10:12
 MERGED from [info.hoang8f:fbutton:1.0.5] C:\Users\patri\.gradle\caches\transforms-1\files-1.1\fbutton-1.0.5.aar\86bddda152ec16afb006f4cf65b168c0\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:firebase-core:11.8.0] C:\Users\patri\.gradle\caches\transforms-1\files-1.1\firebase-core-11.8.0.aar\fe476fcc2bb96963f3b2a6f6ee38e39d\AndroidManifest.xml:2:1-6:12
@@ -42,25 +42,25 @@ MERGED from [com.google.firebase:firebase-common-license:11.8.0] C:\Users\patri\
 MERGED from [com.google.firebase:firebase-analytics-impl-license:11.8.0] C:\Users\patri\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-11.8.0.aar\b7fd479e87f0fceca770a297303f8fd9\AndroidManifest.xml:2:1-6:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\patri\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\c888b3c087aa0ce7eba394475ff2df67\AndroidManifest.xml:17:1-30:12
 MERGED from [com.google.firebase:firebase-iid-license:11.8.0] C:\Users\patri\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.8.0.aar\3bc0a4581426b558c6186b672c8d20a9\AndroidManifest.xml:2:1-6:12
-INJECTED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:2:1-85:12
-INJECTED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:2:1-85:12
-INJECTED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:2:1-85:12
+INJECTED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:2:1-85:12
+INJECTED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:2:1-85:12
+INJECTED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:2:1-85:12
 	package
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:3:5-48
-		INJECTED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:3:5-48
+		INJECTED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:2:1-85:12
-		INJECTED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:2:1-85:12
+		INJECTED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:2:1-85:12
-		INJECTED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:2:1-85:12
+		INJECTED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:5:5-66
+ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:5:5-66
 MERGED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\patri\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\3410e62e089e835abd9fdcd99890f33e\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\patri\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\3410e62e089e835abd9fdcd99890f33e\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] C:\Users\patri\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.8.0.aar\c67763c985523b1f7f3e2cbe8a1d8954\AndroidManifest.xml:23:5-67
@@ -68,9 +68,9 @@ MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] C:\Users\patri\
 MERGED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\patri\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\7dc2d5906c03100704844bda768a690d\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\patri\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\7dc2d5906c03100704844bda768a690d\AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:7:5-83:19
+ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:7:5-83:19
 MERGED from [com.google.firebase:firebase-core:11.8.0] C:\Users\patri\.gradle\caches\transforms-1\files-1.1\firebase-core-11.8.0.aar\fe476fcc2bb96963f3b2a6f6ee38e39d\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-core:11.8.0] C:\Users\patri\.gradle\caches\transforms-1\files-1.1\firebase-core-11.8.0.aar\fe476fcc2bb96963f3b2a6f6ee38e39d\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\patri\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\bcb89667c4b560ebc1f6ed5dd4cec3c8\AndroidManifest.xml:22:5-37:19
@@ -138,151 +138,151 @@ MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\patri\.gradle\caches
 MERGED from [com.google.firebase:firebase-iid-license:11.8.0] C:\Users\patri\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.8.0.aar\3bc0a4581426b558c6186b672c8d20a9\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-iid-license:11.8.0] C:\Users\patri\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.8.0.aar\3bc0a4581426b558c6186b672c8d20a9\AndroidManifest.xml:5:5-20
 	android:supportsRtl
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:11:9-35
 	android:label
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:9:9-41
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:9:9-41
 	android:roundIcon
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:10:9-54
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:10:9-54
 	android:allowBackup
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:12:9-40
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:12:9-40
 meta-data#DATABASE
-ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:14:9-16:48
+ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:14:9-16:48
 	android:value
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:16:13-45
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:16:13-45
 	android:name
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:15:13-36
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:15:13-36
 meta-data#VERSION
-ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:17:9-19:33
+ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:17:9-19:33
 	android:value
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:19:13-30
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:19:13-30
 	android:name
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:18:13-35
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:18:13-35
 meta-data#QUERY_LOG
-ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:20:9-22:36
+ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:20:9-22:36
 	android:value
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:22:13-33
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:22:13-33
 	android:name
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:21:13-37
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:21:13-37
 meta-data#DOMAIN_PACKAGE_NAME
-ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:23:9-25:65
+ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:23:9-25:65
 	android:value
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:25:13-62
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:25:13-62
 	android:name
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:24:13-47
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:24:13-47
 activity#com.example.patri.appbolaoprojeto.MainActivity
-ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:27:9-36:20
+ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:27:9-36:20
 	android:label
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:29:13-45
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:29:13-45
 	android:theme
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:30:13-56
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:30:13-56
 	android:name
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:28:13-41
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:28:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:31:13-35:29
+ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:31:13-35:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:32:17-69
+ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:32:17-69
 	android:name
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:32:25-66
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:32:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:34:17-77
+ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:34:17-77
 	android:name
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:34:27-74
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:34:27-74
 activity#com.example.patri.appbolaoprojeto.LoginActivity
-ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:37:9-40:68
+ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:37:9-40:68
 	android:label
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:39:13-57
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:39:13-57
 	android:theme
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:40:13-56
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:40:13-56
 	android:name
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:38:13-42
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:38:13-42
 activity#com.example.patri.appbolaoprojeto.RegisterActivity
-ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:41:9-44:59
+ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:41:9-44:59
 	android:label
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:43:13-60
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:43:13-60
 	android:theme
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:44:13-56
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:44:13-56
 	android:name
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:42:13-45
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:42:13-45
 activity#com.example.patri.appbolaoprojeto.RecoverPasswordActivity
-ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:45:9-48:59
+ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:45:9-48:59
 	android:label
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:47:13-68
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:47:13-68
 	android:theme
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:48:13-56
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:48:13-56
 	android:name
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:46:13-52
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:46:13-52
 activity#com.example.patri.appbolaoprojeto.ClassbrasileiraoActivity
-ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:49:9-51:71
+ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:49:9-51:71
 	android:label
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:51:13-68
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:51:13-68
 	android:name
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:50:13-53
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:50:13-53
 activity#com.example.patri.appbolaoprojeto.ClassbolaoActivity
-ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:52:9-54:65
+ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:52:9-54:65
 	android:label
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:54:13-62
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:54:13-62
 	android:name
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:53:13-47
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:53:13-47
 activity#com.example.patri.appbolaoprojeto.RodadaspessoaisActivity
-ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:55:9-57:70
+ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:55:9-57:70
 	android:label
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:57:13-67
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:57:13-67
 	android:name
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:56:13-52
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:56:13-52
 activity#com.example.patri.appbolaoprojeto.EstjogadoresActivity
-ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:58:9-60:67
+ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:58:9-60:67
 	android:label
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:60:13-64
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:60:13-64
 	android:name
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:59:13-49
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:59:13-49
 activity#com.example.patri.appbolaoprojeto.EstpessoalActivity
-ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:61:9-63:65
+ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:61:9-63:65
 	android:label
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:63:13-62
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:63:13-62
 	android:name
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:62:13-47
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:62:13-47
 activity#com.example.patri.appbolaoprojeto.MyaccountActivity
-ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:64:9-66:64
+ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:64:9-66:64
 	android:label
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:66:13-61
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:66:13-61
 	android:name
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:65:13-46
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:65:13-46
 activity#com.example.patri.appbolaoprojeto.PreferenciaActivity
-ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:67:9-69:66
+ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:67:9-69:66
 	android:label
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:69:13-63
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:69:13-63
 	android:name
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:68:13-48
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:68:13-48
 activity#com.example.patri.appbolaoprojeto.ReporterrorActivity
-ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:70:9-72:66
+ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:70:9-72:66
 	android:label
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:72:13-63
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:72:13-63
 	android:name
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:71:13-48
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:71:13-48
 activity#com.example.patri.appbolaoprojeto.AboutappActivity
-ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:73:9-75:63
+ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:73:9-75:63
 	android:label
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:75:13-60
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:75:13-60
 	android:name
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:74:13-45
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:74:13-45
 activity#com.example.patri.appbolaoprojeto.AdministerActivity
-ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:76:9-78:65
+ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:76:9-78:65
 	android:label
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:78:13-62
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:78:13-62
 	android:name
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:77:13-47
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:77:13-47
 activity#com.example.patri.appbolaoprojeto.Palpitar1Activity
-ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:79:9-81:63
+ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:79:9-81:63
 	android:label
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:81:13-61
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:81:13-61
 	android:name
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml:80:13-46
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml:80:13-46
 uses-sdk
-INJECTED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml
 MERGED from [com.rengwuxian.materialedittext:library:2.1.4] C:\Users\patri\.gradle\caches\transforms-1\files-1.1\library-2.1.4.aar\3094332c55b8e230ade3519ae10f87a1\AndroidManifest.xml:6:5-8:41
 MERGED from [com.rengwuxian.materialedittext:library:2.1.4] C:\Users\patri\.gradle\caches\transforms-1\files-1.1\library-2.1.4.aar\3094332c55b8e230ade3519ae10f87a1\AndroidManifest.xml:6:5-8:41
 MERGED from [info.hoang8f:fbutton:1.0.5] C:\Users\patri\.gradle\caches\transforms-1\files-1.1\fbutton-1.0.5.aar\86bddda152ec16afb006f4cf65b168c0\AndroidManifest.xml:7:5-9:41
@@ -359,18 +359,18 @@ MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\patri\.gradle\caches
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\patri\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\c888b3c087aa0ce7eba394475ff2df67\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-iid-license:11.8.0] C:\Users\patri\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.8.0.aar\3bc0a4581426b558c6186b672c8d20a9\AndroidManifest.xml:4:5-43
 MERGED from [com.google.firebase:firebase-iid-license:11.8.0] C:\Users\patri\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.8.0.aar\3bc0a4581426b558c6186b672c8d20a9\AndroidManifest.xml:4:5-43
-INJECTED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:26.1.0] C:\Users\patri\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\cb3a5ae458c6a9d7e6cec6570d964113\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\patri\Desktop\Projetos\appbolao\app\src\main\AndroidManifest.xml
 activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
 ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\patri\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\bcb89667c4b560ebc1f6ed5dd4cec3c8\AndroidManifest.xml:23:9-27:75
 	android:excludeFromRecents

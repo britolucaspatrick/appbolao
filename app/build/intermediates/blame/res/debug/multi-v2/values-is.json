@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\patri\\Desktop\\Bolao-20180326T124005Z-001-20180326T220744Z-001\\Bolao-20180326T124005Z-001\\Bolao\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-is\\values-is.xml",
+            "outputFile": "C:\\Users\\patri\\Desktop\\Projetos\\appbolao\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-is\\values-is.xml",
             "map": [
                 {
                     "source": "C:\\Users\\patri\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\3fb916985ba02967e80242d7780d86b5\\res\\values-is\\values.xml",
