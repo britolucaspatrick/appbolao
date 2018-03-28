@@ -44,13 +44,13 @@ public class ArrayAdapterClassificacao extends ArrayAdapter<Classificacao>{
         TextView tvSaldoGol = linha.findViewById(R.id.tvSaldoGol);
         TextView tvPontos = linha.findViewById(R.id.tvPontos);
 
-        tvTime.setText("");
-        tvJogoJgado.setText(list.get(position).getJogos().getQtTotal().toString());
-        tvVitoria.setText(list.get(position).getVitoria().getQtTotal().toString());
-        tvDerota.setText(list.get(position).getDerrota().getQtTotal().toString());
-        tvEmpate.setText(list.get(position).getEmpate().getQtTotal().toString());
-        tvSaldoGol.setText(list.get(position).getSaldoGols().toString());
-        tvPontos.setText(list.get(position).getPontosGanhos().getQtTotal().toString());
+//        tvTime.setText("");
+//        tvJogoJgado.setText(list.get(position).getJogos().getQtTotal().toString());
+//        tvVitoria.setText(list.get(position).getVitoria().getQtTotal().toString());
+//        tvDerota.setText(list.get(position).getDerrota().getQtTotal().toString());
+//        tvEmpate.setText(list.get(position).getEmpate().getQtTotal().toString());
+//        tvSaldoGol.setText(list.get(position).getSaldoGols().toString());
+//        tvPontos.setText(list.get(position).getPontosGanhos().getQtTotal().toString());
 
         return linha;
     }

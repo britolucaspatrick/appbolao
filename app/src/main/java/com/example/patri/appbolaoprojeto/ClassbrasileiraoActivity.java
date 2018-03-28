@@ -69,6 +69,7 @@ public class ClassbrasileiraoActivity extends AppCompatActivity{
         wsEquipe.loadEquipe();
         loadList.start();
     }
+
     private void carregarLista() {
         //passando context, layout e banco
         adapter = new ArrayAdapterClassificacao(this, R.layout.layout_item_list_classificacao, Classificacao.listAll(Classificacao.class,"pontosGanhos"));
@@ -85,6 +86,7 @@ public class ClassbrasileiraoActivity extends AppCompatActivity{
         tvSaldoGol = (TextView) findViewById(R.id.tvSaldoGol);
         tvPontos = (TextView) findViewById(R.id.tvPontos);
     }
+
     Thread loadList = new Thread( new Runnable() {
         @Override
         public void run() {
@@ -100,12 +102,7 @@ public class ClassbrasileiraoActivity extends AppCompatActivity{
                     final String docsaida = resultsRequestSOAP.toString();
                     JSONArray jsonArray = new JSONArray(docsaida);
                     for (int i=0; i < jsonArray.length(); i++) {
-                        Classificacao aux = new Gson().fromJson(jsonArray.get(i).toString(), Classificacao.class);
-                        classificacao = new Classificacao(aux.getCdEquipe(),aux.getGolsPro(),aux.getGolsContra(),
-                                aux.getSaldoGols(),aux.getPos(),aux.getGanhoPos(),
-                                aux.getPontosGanhos(),
-                                aux.getJogos(),
-                                aux.getVitoria(),aux.getEmpate(),aux.getDerrota(),aux.getAproveitamento());
+                        classificacao = new Gson().fromJson(jsonArray.get(i).toString(), Classificacao.class);
                         classificacao.save();
                     };
                     runOnUiThread(new Runnable() {

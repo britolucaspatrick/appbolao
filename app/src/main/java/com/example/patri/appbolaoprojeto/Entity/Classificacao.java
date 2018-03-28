@@ -7,6 +7,7 @@ import com.orm.dsl.NotNull;
 import com.orm.dsl.Unique;
 
 import java.io.Serializable;
+import java.util.List;
 
 public class Classificacao extends SugarRecord implements Serializable{
 
@@ -37,38 +38,23 @@ public class Classificacao extends SugarRecord implements Serializable{
 
     @SerializedName("pontosGanhos")
     @Expose
-    private PontosGanhos pontosGanhos;
+    private List<PontosGanhos> pontosGanhos;
 
     @SerializedName("jogos")
     @Expose
-    private Jogos jogos;
+    private List<Jogos> jogos;
 
     @SerializedName("vitoria")
     @Expose
-    private Vitoria vitoria;
-
-    public Classificacao(String cdEquipe, Integer golsPro, Integer golsContra, Integer saldoGols, String pos, String ganhoPos, PontosGanhos pontosGanhos, Jogos jogos, Vitoria vitoria, Empate empate, Derrota derrota, Double aproveitamento) {
-        this.cdEquipe = cdEquipe;
-        this.golsPro = golsPro;
-        this.golsContra = golsContra;
-        this.saldoGols = saldoGols;
-        this.pos = pos;
-        this.ganhoPos = ganhoPos;
-        this.pontosGanhos = pontosGanhos;
-        this.jogos = jogos;
-        this.vitoria = vitoria;
-        this.empate = empate;
-        this.derrota = derrota;
-        this.aproveitamento = aproveitamento;
-    }
+    private List<Vitoria> vitoria;
 
     @SerializedName("empate")
     @Expose
-    private Empate empate;
+    private List<Empate> empate;
 
     @SerializedName("derrota")
     @Expose
-    private Derrota derrota;
+    private List<Derrota> derrota;
 
     @SerializedName("aproveitamento")
     @Expose
@@ -124,43 +110,43 @@ public class Classificacao extends SugarRecord implements Serializable{
         this.ganhoPos = ganhoPos;
     }
 
-    public PontosGanhos getPontosGanhos() {
+    public List<PontosGanhos> getPontosGanhos() {
         return pontosGanhos;
     }
 
-    public void setPontosGanhos(PontosGanhos pontosGanhos) {
+    public void setPontosGanhos(List<PontosGanhos> pontosGanhos) {
         this.pontosGanhos = pontosGanhos;
     }
 
-    public Jogos getJogos() {
+    public List<Jogos> getJogos() {
         return jogos;
     }
 
-    public void setJogos(Jogos jogos) {
+    public void setJogos(List<Jogos> jogos) {
         this.jogos = jogos;
     }
 
-    public Vitoria getVitoria() {
+    public List<Vitoria> getVitoria() {
         return vitoria;
     }
 
-    public void setVitoria(Vitoria vitoria) {
+    public void setVitoria(List<Vitoria> vitoria) {
         this.vitoria = vitoria;
     }
 
-    public Empate getEmpate() {
+    public List<Empate> getEmpate() {
         return empate;
     }
 
-    public void setEmpate(Empate empate) {
+    public void setEmpate(List<Empate> empate) {
         this.empate = empate;
     }
 
-    public Derrota getDerrota() {
+    public List<Derrota> getDerrota() {
         return derrota;
     }
 
-    public void setDerrota(Derrota derrota) {
+    public void setDerrota(List<Derrota> derrota) {
         this.derrota = derrota;
     }
 

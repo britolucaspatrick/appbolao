@@ -1,7 +1,4 @@
-#Mon Mar 26 23:01:25 BRT 2018
-base.0=C\:\\Users\\patri\\Desktop\\Bolao-20180326T124005Z-001-20180326T220744Z-001\\Bolao-20180326T124005Z-001\\Bolao\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\27
-path.1=classes.dex
-renamed.1=classes2.dex
+#Wed Mar 28 17:20:31 BRT 2018
+base.0=C\:\\Users\\DevTecnoAliance\\Desktop\\Projeto\\appbolao\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=C\:\\Users\\patri\\Desktop\\Bolao-20180326T124005Z-001-20180326T220744Z-001\\Bolao-20180326T124005Z-001\\Bolao\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\26
