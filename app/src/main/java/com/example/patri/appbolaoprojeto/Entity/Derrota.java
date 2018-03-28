@@ -11,24 +11,24 @@ import java.io.Serializable;
  * Created by patri on 24/03/2018.
  */
 public class Derrota extends SugarRecord implements Serializable {
-    public Derrota(Integer qtMandante, Integer qtTotal, Integer qtVisitante) {
-        this.qtMandante = qtMandante;
-        this.qtTotal = qtTotal;
-        this.qtVisitante = qtVisitante;
-    }
 
-    public Derrota(String cdEquipe, Integer qtMandante, Integer qtTotal, Integer qtVisitante) {
-
-        this.cdEquipe = cdEquipe;
-        this.qtMandante = qtMandante;
-        this.qtTotal = qtTotal;
-        this.qtVisitante = qtVisitante;
-    }
-
-    public Derrota(){}
+    //declaracao de atributos
     @Unique
     private String cdEquipe;
 
+    @SerializedName("qtMandante")
+    @Expose
+    private Integer qtMandante;
+
+    @SerializedName("qtTotal")
+    @Expose
+    private Integer qtTotal;
+
+    @SerializedName("qtVisitante")
+    @Expose
+    private Integer qtVisitante;
+
+    //declaracao de getter and setter
     public String getCdEquipe() {
         return cdEquipe;
     }
@@ -36,16 +36,6 @@ public class Derrota extends SugarRecord implements Serializable {
     public void setCdEquipe(String cdEquipe) {
         this.cdEquipe = cdEquipe;
     }
-
-    @SerializedName("qtMandante")
-    @Expose
-    private Integer qtMandante;
-    @SerializedName("qtTotal")
-    @Expose
-    private Integer qtTotal;
-    @SerializedName("qtVisitante")
-    @Expose
-    private Integer qtVisitante;
 
     public Integer getQtMandante() {
         return qtMandante;
@@ -68,6 +58,23 @@ public class Derrota extends SugarRecord implements Serializable {
     }
 
     public void setQtVisitante(Integer qtVisitante) {
+        this.qtVisitante = qtVisitante;
+    }
+
+    //declaracao de construtores
+    public Derrota(){}
+
+    public Derrota(Integer qtMandante, Integer qtTotal, Integer qtVisitante) {
+        this.qtMandante = qtMandante;
+        this.qtTotal = qtTotal;
+        this.qtVisitante = qtVisitante;
+    }
+
+    public Derrota(String cdEquipe, Integer qtMandante, Integer qtTotal, Integer qtVisitante) {
+
+        this.cdEquipe = cdEquipe;
+        this.qtMandante = qtMandante;
+        this.qtTotal = qtTotal;
         this.qtVisitante = qtVisitante;
     }
 
