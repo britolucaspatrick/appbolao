@@ -17,6 +17,7 @@ import com.example.patri.appbolaoprojeto.CustomAdapter.ArrayAdapterEquipe;
 import com.example.patri.appbolaoprojeto.Entity.Classificacao;
 import com.example.patri.appbolaoprojeto.Entity.Equipe;
 import com.example.patri.appbolaoprojeto.WS.WSEquipe;
+import com.example.patri.appbolaoprojeto.WS.WSGetClassificacao;
 import com.google.gson.Gson;
 import com.orm.SugarContext;
 import com.orm.util.QueryBuilder;
@@ -66,7 +67,7 @@ public class ClassbrasileiraoActivity extends AppCompatActivity{
         getSupportActionBar().setHomeButtonEnabled(true);
 
         //carrega list de equipes para banco local
-        wsEquipe.loadEquipe();
+        WSGetClassificacao.getClassificacaoList();
         loadList.start();
     }
     private void carregarLista() {

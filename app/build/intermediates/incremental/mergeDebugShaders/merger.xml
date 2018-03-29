@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\main\shaders"/></dataSet><dataSet config="debug"><source path="C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\src\debug\shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="D:\projetos\appbolao\app\src\main\shaders"/></dataSet><dataSet config="debug"><source path="D:\projetos\appbolao\app\src\debug\shaders"/></dataSet></merger>
