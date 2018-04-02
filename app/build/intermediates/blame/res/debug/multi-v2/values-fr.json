@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\DevTecnoAliance\\Documents\\GitHub\\appbolao\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fr\\values-fr.xml",
+            "outputFile": "C:\\Users\\patri\\Documents\\GitHub\\appbolao\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fr\\values-fr.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\DevTecnoAliance\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\4473a98586f275290cc5e143ae2e3a88\\res\\values-fr\\values-fr.xml",
+                    "source": "C:\\Users\\patri\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\c86f2b448f235e51774ef0379a2e651f\\res\\values-fr\\values-fr.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\DevTecnoAliance\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.8.0.aar\\4c72055905cee6db864b89307cc083c5\\res\\values-fr\\values.xml",
+                    "source": "C:\\Users\\patri\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.8.0.aar\\8780575667dc66b67879bac0f626689e\\res\\values-fr\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\DevTecnoAliance\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\b6356db7916dbe3657a1bf5a745f9398\\res\\values-fr\\values.xml",
+                    "source": "C:\\Users\\patri\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\3fb916985ba02967e80242d7780d86b5\\res\\values-fr\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
