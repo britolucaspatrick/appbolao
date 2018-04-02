@@ -1,4 +1,7 @@
-#Thu Mar 29 00:18:18 BRT 2018
-base.0=D\:\\projetos\\appbolao\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+#Mon Apr 02 13:28:18 BRT 2018
+base.0=C\:\\Users\\DevTecnoAliance\\Documents\\GitHub\\appbolao\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
+path.1=classes.dex
+renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
+base.1=C\:\\Users\\DevTecnoAliance\\Documents\\GitHub\\appbolao\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13

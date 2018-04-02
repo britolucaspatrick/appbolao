@@ -1,26 +1,18 @@
 package com.example.patri.appbolaoprojeto;
 
-import android.app.DownloadManager;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.example.patri.appbolaoprojeto.CustomAdapter.ArrayAdapterClassificacao;
-import com.example.patri.appbolaoprojeto.CustomAdapter.ArrayAdapterEquipe;
 import com.example.patri.appbolaoprojeto.Entity.Classificacao;
 import com.example.patri.appbolaoprojeto.Entity.Equipe;
-import com.example.patri.appbolaoprojeto.WS.WSEquipe;
-import com.example.patri.appbolaoprojeto.WS.WSGetClassificacao;
+import com.example.patri.appbolaoprojeto.WS.WSGetEquipe;
 import com.google.gson.Gson;
-import com.orm.SugarContext;
-import com.orm.util.QueryBuilder;
 
 //import com.google.gson.Gson;
 //import com.google.gson.JsonArray;
@@ -47,9 +39,12 @@ public class ClassbrasileiraoActivity extends AppCompatActivity{
 
     private ArrayAdapter<Classificacao> adapter;
     private ListView listClassificacao;
-    WSEquipe wsEquipe = new WSEquipe();
+    WSGetEquipe wsGetEquipe = new WSGetEquipe();
 
     private Classificacao classificacao;
+    private List<Classificacao> list = new ArrayList<>();
+
+    public static List<Equipe> equipeList = new ArrayList<>();
 
     private TextView tvTime;
     private TextView tvJogoJogado;
@@ -67,12 +62,41 @@ public class ClassbrasileiraoActivity extends AppCompatActivity{
         getSupportActionBar().setHomeButtonEnabled(true);
 
         //carrega list de equipes para banco local
-        WSGetClassificacao.getClassificacaoList();
+        //WSGetClassificacao.getClassificacaoList();
+        //WSGetEquipe.getEquipeList();
+        loadEquipe.start();
         loadList.start();
     }
+
+    Thread loadEquipe = new Thread(new Runnable() {
+        @Override
+        public void run() {
+            try  {
+                SoapObject request = new SoapObject(NAMESPACE,URL_LIST_EQUIPE);
+                SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
+                envelope.setOutputSoapObject(request);
+                HttpTransportSE androidHttpTransport = new HttpTransportSE(URL);
+                try {
+                    androidHttpTransport.call(SOAP_ACTION + URL_LIST_EQUIPE, envelope);
+                    SoapPrimitive resultsRequestSOAP = (SoapPrimitive) envelope.getResponse();
+                    final String docsaida = resultsRequestSOAP.toString();
+                    JSONArray jsonArray = new JSONArray(docsaida);
+                    for (int i=0; i < jsonArray.length(); i++) {
+                        Equipe equipe = new Gson().fromJson(jsonArray.get(i).toString(), Equipe.class); //banco
+                        equipeList.add(equipe);
+                    };
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    });
+
     private void carregarLista() {
         //passando context, layout e banco
-        adapter = new ArrayAdapterClassificacao(this, R.layout.layout_item_list_classificacao, Classificacao.listAll(Classificacao.class,"pontosGanhos"));
+        adapter = new ArrayAdapterClassificacao(this, R.layout.layout_item_list_classificacao, list);
         adapter.setDropDownViewResource(R.layout.layout_item_list_classificacao);
         listClassificacao.setAdapter(adapter);
     }
@@ -102,12 +126,7 @@ public class ClassbrasileiraoActivity extends AppCompatActivity{
                     JSONArray jsonArray = new JSONArray(docsaida);
                     for (int i=0; i < jsonArray.length(); i++) {
                         Classificacao aux = new Gson().fromJson(jsonArray.get(i).toString(), Classificacao.class);
-                        classificacao = new Classificacao(aux.getCdEquipe(),aux.getGolsPro(),aux.getGolsContra(),
-                                aux.getSaldoGols(),aux.getPos(),aux.getGanhoPos(),
-                                aux.getPontosGanhos(),
-                                aux.getJogos(),
-                                aux.getVitoria(),aux.getEmpate(),aux.getDerrota(),aux.getAproveitamento());
-                        classificacao.save();
+                        list.add(aux);
                     };
                     runOnUiThread(new Runnable() {
                         @Override

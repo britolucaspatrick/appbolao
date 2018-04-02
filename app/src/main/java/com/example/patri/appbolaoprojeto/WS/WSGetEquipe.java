@@ -15,6 +15,7 @@ import org.ksoap2.serialization.SoapPrimitive;
 import org.ksoap2.serialization.SoapSerializationEnvelope;
 import org.ksoap2.transport.HttpTransportSE;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static com.example.patri.appbolaoprojeto.WS.WSConstantes.NAMESPACE;
@@ -27,24 +28,24 @@ import static com.example.patri.appbolaoprojeto.WS.WSConstantes.URL_LIST_EQUIPE;
  * Created by DevTecnoAliance on 26/03/2018.
  */
 
-public class WSEquipe {
+public class WSGetEquipe {
 
-    public Equipe equipe;
+    //public static List<Equipe> equipeList = new ArrayList<>();
 
-    public void loadEquipe(){
+    public static void getEquipeList(){
         try  {
             SoapObject request = new SoapObject(NAMESPACE,URL_LIST_EQUIPE);
             SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
             envelope.setOutputSoapObject(request);
-            HttpTransportSE androidHttpTransport = new HttpTransportSE(URL);
+            //HttpTransportSE androidHttpTransport = new HttpTransportSE(URL);
             try {
-                androidHttpTransport.call(SOAP_ACTION + URL_LIST_EQUIPE, envelope);
+                //androidHttpTransport.call(SOAP_ACTION + URL_LIST_EQUIPE, envelope);
                 SoapPrimitive resultsRequestSOAP = (SoapPrimitive) envelope.getResponse();
                 final String docsaida = resultsRequestSOAP.toString();
                 JSONArray jsonArray = new JSONArray(docsaida);
                 for (int i=0; i < jsonArray.length(); i++) {
-                    equipe = new Gson().fromJson(jsonArray.get(i).toString(), Equipe.class); //banco
-                    equipe.save(); //persistindo
+                    Equipe equipe = new Gson().fromJson(jsonArray.get(i).toString(), Equipe.class); //banco
+                    //equipeList.add(equipe);
                 };
             } catch (Exception e) {
                 e.printStackTrace();

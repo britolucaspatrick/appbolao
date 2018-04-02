@@ -2,86 +2,103 @@
 <instant-run
     abi="armeabi-v7a,armeabi"
     api-level="23"
-    build-mode="COLD"
+    build-mode="FULL"
     density="xhdpi"
     format="10"
-    ir-eligibility="COMPATIBLE"
     plugin-version="3.1.0"
-    timestamp="1522116703928"
-    token="-3907119115892885611"
-    verifier="COLD_SWAP_REQUESTED" >
+    timestamp="1522688373191"
+    token="-5439645310099014377"
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="1340" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="105" />
+        duration="0" />
     <task
         name="verifier"
-        duration="34" />
+        duration="0" />
 
     <artifact
-        location="C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+        location="C:\Users\DevTecnoAliance\Documents\GitHub\appbolao\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+        location="C:\Users\DevTecnoAliance\Documents\GitHub\appbolao\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\DevTecnoAliance\Documents\GitHub\appbolao\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\DevTecnoAliance\Documents\GitHub\appbolao\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\DevTecnoAliance\Documents\GitHub\appbolao\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\DevTecnoAliance\Documents\GitHub\appbolao\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\DevTecnoAliance\Documents\GitHub\appbolao\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\DevTecnoAliance\Documents\GitHub\appbolao\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\DevTecnoAliance\Documents\GitHub\appbolao\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\DevTecnoAliance\Documents\GitHub\appbolao\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\DevTecnoAliance\Documents\GitHub\appbolao\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\DevTecnoAliance\Documents\GitHub\appbolao\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
         type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1522116052625"
+        timestamp="1522688373191"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            location="C:\Users\DevTecnoAliance\Documents\GitHub\appbolao\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            location="C:\Users\DevTecnoAliance\Documents\GitHub\appbolao\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            location="C:\Users\DevTecnoAliance\Documents\GitHub\appbolao\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            location="C:\Users\DevTecnoAliance\Documents\GitHub\appbolao\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            location="C:\Users\DevTecnoAliance\Documents\GitHub\appbolao\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            location="C:\Users\DevTecnoAliance\Documents\GitHub\appbolao\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            location="C:\Users\DevTecnoAliance\Documents\GitHub\appbolao\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            location="C:\Users\DevTecnoAliance\Documents\GitHub\appbolao\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            location="C:\Users\DevTecnoAliance\Documents\GitHub\appbolao\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            location="C:\Users\DevTecnoAliance\Documents\GitHub\appbolao\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            location="C:\Users\DevTecnoAliance\Documents\GitHub\appbolao\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1522116703928"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\patri\Desktop\Bolao-20180326T124005Z-001-20180326T220744Z-001\Bolao-20180326T124005Z-001\Bolao\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+            location="C:\Users\DevTecnoAliance\Documents\GitHub\appbolao\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
 

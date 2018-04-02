@@ -9,10 +9,12 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import com.example.patri.appbolaoprojeto.ClassbrasileiraoActivity;
 import com.example.patri.appbolaoprojeto.Entity.Equipe;
 import com.example.patri.appbolaoprojeto.R;
 import com.example.patri.appbolaoprojeto.Entity.Classificacao;
 import com.example.patri.appbolaoprojeto.CustomAdapter.ArrayAdapterEquipe;
+import com.example.patri.appbolaoprojeto.WS.WSGetEquipe;
 import com.orm.query.Condition;
 import com.orm.query.Select;
 
@@ -44,7 +46,12 @@ public class ArrayAdapterClassificacao extends ArrayAdapter<Classificacao>{
         TextView tvSaldoGol = linha.findViewById(R.id.tvSaldoGol);
         TextView tvPontos = linha.findViewById(R.id.tvPontos);
 
-        tvTime.setText("");
+        for (Equipe eq: ClassbrasileiraoActivity.equipeList) {
+            if (eq.getCdEquipe().equals(list.get(position).getCdEquipe())) {
+                tvTime.setText(eq.getNmComum());
+            }
+        }
+
         tvJogoJgado.setText(list.get(position).getJogos().getQtTotal().toString());
         tvVitoria.setText(list.get(position).getVitoria().getQtTotal().toString());
         tvDerota.setText(list.get(position).getDerrota().getQtTotal().toString());
