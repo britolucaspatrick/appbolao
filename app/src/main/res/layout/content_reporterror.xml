@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.patri.appbolaoprojeto.ReporterrorActivity"
+    tools:showIn="@layout/activity_reporterror"
+    android:layout_marginStart='@dimen/vinte_dp'
+    android:layout_marginEnd='@dimen/vinte_dp'
+    android:orientation="vertical">
+    <TextView
+        android:layout_width= "wrap_content"
+        android:layout_height= "wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/vinte_dp"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:text="@string/tvRepErro"/>
+
+    <TextView
+        android:layout_width= "wrap_content"
+        android:layout_height= "wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:textSize="10dp"
+        android:text="@string/tvSubErro"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vinte_dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_vertical"
+            android:text="@string/tvTela"/>
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:entries="@array/telas"
+            android:layout_marginTop="@dimen/dez_dp">
+        </Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vinte_dp"
+        android:orientation="horizontal">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/tvTitulo"
+            android:layout_marginTop="@dimen/dez_dp"
+            android:id="@+id/etTitulo"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vinte_dp"
+        android:orientation="horizontal">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/tvDescErro"
+            android:layout_marginTop="@dimen/dez_dp"
+            android:id="@+id/etDescErro"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width= "120dp"
+            android:layout_height= "wrap_content"
+            android:text="@string/btEnviar"
+            android:textColor="@android:color/white"
+            android:background="@drawable/botao_customizado"
+            android:layout_marginEnd="30dp"
+            android:id="@+id/btEnviar"/>
+        <Button
+            android:layout_width= "120dp"
+            android:layout_height= "wrap_content"
+            android:background="@drawable/botao_customizado2"
+            android:textColor="@android:color/white"
+            android:text="@string/btCancelar"
+            android:id="@+id/btCancelar"/>
+    </LinearLayout>
+</LinearLayout>
