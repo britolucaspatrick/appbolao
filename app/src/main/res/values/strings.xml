@@ -74,4 +74,45 @@
     <string name="pontuacao">Pontos</string>
 
 
+    <string name="title_activity_minha_conta">MinhaContaActivity</string>
+    <string name="title_activity_reportar_erro">ReportarErroActivity</string>
+    <string name="tvNome">Nome </string>
+    <string name="tvDataNasc">Nascimento </string>
+    <string name="tvRepErro">Descreva o Problema/Sugestão </string>
+    <string name="tvTitCadastro">Mantenha seus dados atualizados! </string>
+    <string name="tvSubErro">Ajude-nos a tornar este App ainda melhor! </string>
+    <string name="tvEmail">E-mail</string>
+    <string name="tvUsuario">Usuário </string>
+    <string name="tvSenha">Senha </string>
+    <string name="tvConSenha">Confirmar </string>
+    <string name="tvTela">Tela </string>
+    <string name="tvTitulo">Título </string>
+    <string name="btConfirmar">Confirmar </string>
+    <string name="btSalvar">Salvar </string>
+    <string name="btSair">Sair </string>
+    <string name="btEnviar">Enviar </string>
+    <string name="btAtualizar">Atualizar </string>
+    <string name="btCancelar">Cancelar </string>
+    <string name="tvDescErro">Descrição </string>
+    <string name="tvDsCadastro">Informe seus Dados </string>
+    <string name="tvVersaoApp">Versão do Aplicativo: 1.0 </string>
+    <string name="tvVersaoAndroid">Versão do Aplicativo: 6.0 </string>
+    <string name="tvTxSobre">Bolão Show de Bola é um aplicativo de palpites dos resultados de jogos do Campeonato Brasileiro.</string>
+    <string name="tvRecSenha">Recuperar Senha </string>
+    <string-array name="telas">
+        <item>Palpitar</item>
+        <item>Classif. Brasileirão</item>
+        <item>Classif. Bolão</item>
+        <item>Rodadas Pessoais</item>
+        <item>Estatísticas Jogadores</item>
+        <item>Estatísticas Pessoal</item>
+        <item>Minha Conta</item>
+        <item>Preferência</item>
+    </string-array>
+    <string name="title_activity_cadastro">CadastroActivity</string>
+    <string name="title_activity_recuperar_senha">RecuperarSenhaActivity</string>
+    <string name="title_activity_sobre">SobreActivity</string>
+
+
+
 </resources>

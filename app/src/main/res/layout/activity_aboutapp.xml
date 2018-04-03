@@ -1,36 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.patri.appbolaoprojeto.AboutappActivity">
+    android:layout_marginEnd='@dimen/vinte_dp'>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:contentDescription="@android:string/copy"
+        app:srcCompat="@drawable/logotipo" />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:text="@string/versionApp"/>
+        android:layout_width= "wrap_content"
+        android:layout_height= "wrap_content"
+        android:layout_gravity="center"
+        android:textSize="15dp"
+        android:layout_marginTop="@dimen/vinte_dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@android:color/black"
+        android:text="@string/tvTxSobre"/>
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:text="@string/versionAndroid"/>
+        android:layout_width= "wrap_content"
+        android:layout_height= "wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="@dimen/vinte_dp"
+        android:textColor="@android:color/black"
+        android:text="@string/tvVersaoApp"/>
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:text="@string/developers"/>
+        android:layout_width= "wrap_content"
+        android:layout_height= "wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:text="@string/tvVersaoAndroid"/>
 
 
 </LinearLayout>

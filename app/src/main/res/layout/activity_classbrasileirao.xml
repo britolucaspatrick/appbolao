@@ -6,12 +6,61 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:theme="@style/marginpadrao"
+    android:layout_marginStart="@dimen/vinte_dp"
     tools:context="com.example.patri.appbolaoprojeto.ClassbrasileiraoActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text="J"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text="V"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text="D"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text="E"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="SG"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="Pts."
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
     <ListView
         android:id="@+id/listClassificacao"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
 
 </LinearLayout>

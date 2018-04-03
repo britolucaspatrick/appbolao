@@ -45,29 +45,28 @@
                 android:textColor="@color/recoverPassword"
                 android:text="@string/recoverPassword"/>
 
-            <LinearLayout
-                android:id="@+id/llButtonsLogin"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="25dp"
-                android:gravity="center">
-                <info.hoang8f.widget.FButton
-                    android:id="@+id/btEnterLogin"
-                    android:layout_width="125dp"
-                    android:layout_height="wrap_content"
-                    android:text="@string/btLogin"
-                    android:layout_marginEnd="5dp"
-                    android:textColor="@android:color/white"
-                    android:backgroundTint="@color/fbutton_color_emerald"/>
-                <info.hoang8f.widget.FButton
-                    android:id="@+id/btRegisterLogin"
-                    android:layout_width="125dp"
-                    android:layout_height="wrap_content"
-                    android:text="@string/btRegister"
-                    android:textColor="@android:color/white"
-                    android:backgroundTint="@color/fbutton_color_emerald"/>
-            </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width= "120dp"
+                android:layout_height= "wrap_content"
+                android:text="@string/btEnviar"
+                android:textColor="@android:color/white"
+                android:background="@drawable/botao_customizado"
+                android:layout_marginEnd="30dp"
+                android:id="@+id/btEnviar"/>
+            <Button
+                android:layout_width= "120dp"
+                android:layout_height= "wrap_content"
+                android:background="@drawable/botao_customizado"
+                android:textColor="@android:color/white"
+                android:text="@string/btRegister"
+                android:id="@+id/btCancelar"/>
+        </LinearLayout>
     <com.google.android.gms.common.SignInButton
         android:id="@+id/btSignGoogleLogin"
         android:layout_marginTop="25dp"
