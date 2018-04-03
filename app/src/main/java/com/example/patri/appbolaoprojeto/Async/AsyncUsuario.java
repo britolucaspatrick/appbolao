@@ -5,9 +5,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
+import android.widget.Toast;
 
 import com.example.patri.appbolaoprojeto.MainActivity;
-import com.example.patri.appbolaoprojeto.Util.Util;
 import com.example.patri.appbolaoprojeto.Validation.LoginValidation;
 
 import java.io.BufferedReader;
@@ -70,7 +70,8 @@ public class AsyncUsuario extends AsyncTask<String, String, String> {
             activity.startActivity(i);
             activity.finish();
         } else {
-            Util.showMsgToast(activity, "Login/Senha inválidos!");
+            //Util.showMsgToast(activity, "Login/Senha inválidos!");
+            Toast.makeText(activity, "Login/senha invalidos", Toast.LENGTH_SHORT).show();
         }
     }
 }
