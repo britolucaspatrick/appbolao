@@ -53,6 +53,9 @@ public class Palpitar1Activity extends AppCompatActivity {
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+        for (int i=0; i<38; i++){
+            tabLayout.addTab(tabLayout.newTab().setText("Rodada "+(i+1)));
+        }
 
         mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager));
@@ -129,7 +132,7 @@ public class Palpitar1Activity extends AppCompatActivity {
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 3;
+            return 38;
         }
     }
 
