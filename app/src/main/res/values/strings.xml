@@ -8,7 +8,7 @@
     <string name="title_activity_login">LoginActivity</string>
 
     <!-- Layout login -->
-    <string name="user">Usuário</string>
+    <string name="user">Usuárioc</string>
     <string name="password">Senha</string>
     <string name="recoverPassword">Esqueceu sua senha?</string>
     <string name="btLogin">Entrar</string>
