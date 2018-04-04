@@ -90,13 +90,13 @@
             android:layout_height= "wrap_content"
             android:text="@string/btEnviar"
             android:textColor="@android:color/white"
-            android:background="@drawable/botao_customizado"
+            android:background="@drawable/botao_customizado_verde"
             android:layout_marginEnd="30dp"
             android:id="@+id/btEnviar"/>
         <Button
             android:layout_width= "120dp"
             android:layout_height= "wrap_content"
-            android:background="@drawable/botao_customizado2"
+            android:background="@drawable/botao_customizado_vermelho"
             android:textColor="@android:color/white"
             android:text="@string/btCancelar"
             android:id="@+id/btCancelar"/>

@@ -100,22 +100,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="@dimen/dez_dp"
+        android:layout_marginTop="40dp"
         android:orientation="horizontal">
         <Button
             android:layout_width= "120dp"
             android:layout_height= "wrap_content"
-            android:text="@string/btAtualizar"
-            android:layout_marginEnd="30dp"
-            android:background="@drawable/botao_customizado"
+            android:text="@string/btEnviar"
             android:textColor="@android:color/white"
+            android:background="@drawable/botao_customizado_verde"
+            android:layout_marginEnd="30dp"
             android:id="@+id/btAtualizar"/>
         <Button
             android:layout_width= "120dp"
             android:layout_height= "wrap_content"
-            android:background="@drawable/botao_customizado2"
+            android:background="@drawable/botao_customizado_vermelho"
             android:textColor="@android:color/white"
-            android:text="@string/btSair"
-            android:id="@+id/btSair"/>
+            android:text="@string/btCancelar"
+            android:id="@+id/btCancelar"/>
     </LinearLayout>
 </LinearLayout>
