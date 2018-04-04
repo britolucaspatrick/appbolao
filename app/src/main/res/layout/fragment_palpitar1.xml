@@ -16,4 +16,7 @@
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintTop_creator="1" />
 
+
+    <include layout="@layout/layout_item_list_palpite"/>
+
 </android.support.constraint.ConstraintLayout>

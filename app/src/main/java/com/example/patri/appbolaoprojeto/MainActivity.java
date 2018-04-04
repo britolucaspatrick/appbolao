@@ -16,8 +16,9 @@ import android.view.MenuItem;
 
 import com.orm.SugarContext;
 
-public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+
+    private Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +32,8 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                intent = new Intent(MainActivity.this, Palpitar1Activity.class);
+                startActivity(intent);
             }
         });
 
@@ -74,7 +75,7 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.action_logout) {
             return true;
         } else if (id == R.id.action_administrador) {
-            Intent intent = new Intent(MainActivity.this, AdministerActivity.class);
+            intent = new Intent(MainActivity.this, AdministerActivity.class);
             startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
@@ -85,7 +86,6 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-        Intent intent;
         if (id == R.id.nav_palpitar) {
             intent = new Intent(MainActivity.this, Palpitar1Activity.class);
             startActivity(intent);
