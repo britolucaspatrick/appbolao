@@ -27,41 +27,47 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:textColor="@android:color/black"
+            android:theme="@style/tvListClassificacao"
             android:text="J"
-            android:layout_weight="0.1"/>
+            android:layout_weight="0.09"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:textColor="@android:color/black"
+            android:theme="@style/tvListClassificacao"
             android:text="V"
-            android:layout_weight="0.1"/>
+            android:layout_weight="0.09"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:textColor="@android:color/black"
+            android:theme="@style/tvListClassificacao"
             android:text="D"
-            android:layout_weight="0.1"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:textColor="@android:color/black"
-            android:text="E"
-            android:layout_weight="0.1"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:textColor="@android:color/black"
-            android:text="SG"
-            android:layout_weight="0.1"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:textColor="@android:color/black"
-            android:text="Pts."
-            android:layout_weight="0.1"/>
+            android:layout_weight="0.14"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.03"
+            android:text="E"
+            android:textColor="@android:color/black"
+            android:theme="@style/tvListClassificacao" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/black"
+            android:theme="@style/tvListClassificacao"
+            android:text="SG"
+            android:layout_weight="0.05"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/black"
+            android:theme="@style/tvListClassificacao"
+            android:text="Pts"
+            android:layout_weight="0.06"/>
     </LinearLayout>
     <ListView
         android:id="@+id/listClassificacao"
