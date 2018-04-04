@@ -26,14 +26,18 @@
         android:layout_marginTop="@dimen/dez_dp"
         android:orientation="horizontal">
 
-        <com.rengwuxian.materialedittext.MaterialEditText
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2.5"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="@string/tvNome"
-            android:layout_marginTop="@dimen/dez_dp"
-            android:id="@+id/etNome"/>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_etNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:hint="@string/tvNome" />
+        </android.support.design.widget.TextInputLayout>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -42,14 +46,18 @@
         android:textColor="@android:color/black"
         android:orientation="horizontal">
 
-        <com.rengwuxian.materialedittext.MaterialEditText
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2.5"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="@string/tvDataNasc"
-            android:layout_marginTop="@dimen/dez_dp"
-            android:id="@+id/etDataNasc"/>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_etDataNasc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etDataNasc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:hint="@string/tvDataNasc" />
+        </android.support.design.widget.TextInputLayout>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -57,14 +65,18 @@
         android:layout_marginTop="@dimen/dez_dp"
         android:orientation="horizontal">
 
-        <com.rengwuxian.materialedittext.MaterialEditText
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2.5"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="@string/tvEmail"
-            android:layout_marginTop="@dimen/dez_dp"
-            android:id="@+id/etEmail"/>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:hint="@string/tvEmail" />
+        </android.support.design.widget.TextInputLayout>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -72,14 +84,18 @@
         android:layout_marginTop="@dimen/dez_dp"
         android:orientation="horizontal">
 
-        <com.rengwuxian.materialedittext.MaterialEditText
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2.5"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="@string/tvUsuario"
-            android:layout_marginTop="@dimen/dez_dp"
-            android:id="@+id/etUsuario"/>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_etUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:hint="@string/tvUsuario" />
+        </android.support.design.widget.TextInputLayout>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -87,14 +103,18 @@
         android:layout_marginTop="@dimen/dez_dp"
         android:orientation="horizontal">
 
-        <com.rengwuxian.materialedittext.MaterialEditText
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2.5"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="@string/tvSenha"
-            android:layout_marginTop="@dimen/dez_dp"
-            android:id="@+id/etSenha"/>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_etSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:hint="@string/tvSenha" />
+        </android.support.design.widget.TextInputLayout>
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
