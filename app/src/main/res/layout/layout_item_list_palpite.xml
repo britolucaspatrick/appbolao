@@ -1,40 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="30dp"
+    android:layout_height="wrap_content"
     android:orientation="horizontal">
 
     <TextView
         android:id="@+id/tvTime1"
         android:layout_width="50dp"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:textSize="16dp"
         android:textStyle="normal"
-        android:layout_weight="0.4"/>"
+        android:textAlignment="center"
+        android:layout_weight="0.3"/>"
 
     <EditText
-        android:layout_width="30dp"
-        android:layout_height="match_parent"
-        android:textSize="16dp"
-        android:textStyle="normal"/>
+        android:id="@+id/etTime1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_weight="0.1"
+        android:maxLength="2"
+        android:textAlignment="center"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=" X "/>
+        android:layout_gravity="center_horizontal|center"
+        android:textAlignment="center"
+        android:text=" X "
+        android:layout_weight="0.1"/>
 
     <EditText
-        android:layout_width="30dp"
-        android:layout_height="match_parent"
-        android:textSize="16dp"
-        android:textStyle="normal"/>
+        android:id="@+id/etTime2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_weight="0.1"
+        android:maxLength="2"
+        android:textAlignment="center"/>
 
     <TextView
         android:id="@+id/tvTime2"
         android:layout_width="50dp"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:textSize="16dp"
         android:textStyle="normal"
-        android:layout_weight="0.4"/>"
+        android:textAlignment="center"
+        android:layout_weight="0.3"/>"
 
 </LinearLayout>

@@ -18,9 +18,37 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.example.patri.appbolaoprojeto.CustomAdapter.ArrayAdapterClassificacao;
+import com.example.patri.appbolaoprojeto.CustomAdapter.ArrayAdapterJogoRodada;
+import com.example.patri.appbolaoprojeto.Entity.Classificacao;
+import com.example.patri.appbolaoprojeto.Entity.Equipe;
+import com.example.patri.appbolaoprojeto.Entity.JogoRodada;
+import com.google.gson.Gson;
+
+import org.json.JSONArray;
+import org.ksoap2.SoapEnvelope;
+import org.ksoap2.serialization.SoapObject;
+import org.ksoap2.serialization.SoapPrimitive;
+import org.ksoap2.serialization.SoapSerializationEnvelope;
+import org.ksoap2.transport.HttpTransportSE;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static com.example.patri.appbolaoprojeto.WS.WSConstantes.NAMESPACE;
+import static com.example.patri.appbolaoprojeto.WS.WSConstantes.SOAP_ACTION;
+import static com.example.patri.appbolaoprojeto.WS.WSConstantes.URL;
+import static com.example.patri.appbolaoprojeto.WS.WSConstantes.URL_LIST_JOGO_RODADA;
 
 public class Palpitar1Activity extends AppCompatActivity {
+
+    public static List<JogoRodada> jogoRodadaList = new ArrayList<>();
+    public ArrayAdapter<Classificacao> adapter;
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -60,7 +88,41 @@ public class Palpitar1Activity extends AppCompatActivity {
         mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager));
 
+        loadListJogoPalpite.start();
+
     }
+
+    Thread loadListJogoPalpite = new Thread(new Runnable() {
+        @Override
+        public void run() {
+            try  {
+                SoapObject request = new SoapObject(NAMESPACE,URL_LIST_JOGO_RODADA);
+                request.addProperty("nrRodada", "1");//parâmetro
+                SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
+                envelope.setOutputSoapObject(request);
+                HttpTransportSE androidHttpTransport = new HttpTransportSE(URL);
+                try {
+                    androidHttpTransport.call(SOAP_ACTION + URL_LIST_JOGO_RODADA, envelope);
+                    SoapPrimitive resultsRequestSOAP = (SoapPrimitive) envelope.getResponse();
+                    final String docsaida = resultsRequestSOAP.toString();
+                    JSONArray jsonArray = new JSONArray(docsaida);
+                    for (int i=0; i < jsonArray.length(); i++) {
+                        JogoRodada jogoRodada = new Gson().fromJson(jsonArray.get(i).toString(), JogoRodada.class); //banco
+                        jogoRodadaList.add(jogoRodada);
+                    };
+                } catch (Exception e) {
+                    e.printStackTrace();
+                } finally {
+                    loadListJogoPalpite.interrupt();
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            } finally {
+                loadListJogoPalpite.interrupt();
+            }
+        }
+    });
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -86,6 +148,7 @@ public class Palpitar1Activity extends AppCompatActivity {
          * fragment.
          */
         private static final String ARG_SECTION_NUMBER = "section_number";
+        private ArrayAdapterJogoRodada adapter;
 
         public PlaceholderFragment() {
         }
@@ -106,8 +169,15 @@ public class Palpitar1Activity extends AppCompatActivity {
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_palpitar1, container, false);
-            TextView textView = (TextView) rootView.findViewById(R.id.section_label);
-            textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
+            //TextView textView = (TextView) rootView.findViewById(R.id.section_label);
+            //textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
+
+            ListView listView = (ListView) rootView.findViewById(R.id.listPalpite);
+
+            adapter = new ArrayAdapterJogoRodada(getContext(), R.layout.layout_item_list_palpite, jogoRodadaList);
+            adapter.setDropDownViewResource(R.layout.layout_item_list_classificacao);
+            listView.setAdapter(adapter);
+
             return rootView;
         }
     }
@@ -131,7 +201,7 @@ public class Palpitar1Activity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            // Show 3 total pages.
+            // Show 38 total pages.
             return 38;
         }
     }

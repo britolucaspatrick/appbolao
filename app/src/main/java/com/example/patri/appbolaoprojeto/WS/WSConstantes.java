@@ -16,6 +16,7 @@ public class WSConstantes {
     public static final String URL_LIST_EQUIPE = "getEquipeList";
     public static final String SOAP_ACTION = "http://ws.wsintegrabolao.com.br/";
     public static final String URL_WS_LOGIN = "http://192.168.1.34:8080/rest-web/rest/user/login";
+    public static final String URL_LIST_JOGO_RODADA = "getJogoRodada";
 
 }
 
