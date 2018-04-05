@@ -137,7 +137,7 @@ public class Palpitar1Activity extends AppCompatActivity {
             View rootView = inflater.inflate(R.layout.fragment_palpitar1, container, false);
             int aux1 = getArguments().getInt(ARG_SECTION_NUMBER); // representa a rodada
             ListView listView = (ListView) rootView.findViewById(R.id.listPalpite);
-            adapter = new ArrayAdapterJogoRodada(getContext(), R.layout.layout_item_list_palpite, (List<JogoRodada>) DBJogoRodada.dbJogoRodada.get(aux1));
+            adapter = new ArrayAdapterJogoRodada(getContext(), R.layout.layout_item_list_palpite,DBJogoRodada.dbJogoRodada.get(aux1));
             //dbjogorodada retorna por posição informada, uma lista com 10 jogos
             adapter.setDropDownViewResource(R.layout.layout_item_list_classificacao);
             listView.setAdapter(adapter);
