@@ -30,10 +30,8 @@ public class ArrayAdapterJogoRodada extends ArrayAdapter<JogoRodada> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View linha = layoutInflater.inflate(R.layout.layout_item_list_palpite, parent, false);
-
         TextView tvTime1 = linha.findViewById(R.id.tvTime1);
         TextView tvTime2 = linha.findViewById(R.id.tvTime2);
-
         for (Equipe eq: ClassbrasileiraoActivity.equipeList) {
             if (eq.getCdEquipe().equals(list.get(position).getCdEquipe1())) {
                 tvTime1.setText(eq.getNmComum());
@@ -42,7 +40,6 @@ public class ArrayAdapterJogoRodada extends ArrayAdapter<JogoRodada> {
                 tvTime2.setText(eq.getNmComum());
             }
         }
-
         return linha;
     }
 
@@ -57,19 +54,19 @@ public class ArrayAdapterJogoRodada extends ArrayAdapter<JogoRodada> {
         this.context = context;
     }
 
-    @Override
-    public int getCount() {
-        return list.size();
-    }
+    //@Override
+    //public int getCount() {
+      //  return list.;
+    //}
 
     @Override
     public int getPosition(@Nullable JogoRodada item) {
         return super.getPosition(item);
     }
 
-    @Nullable
-    @Override
-    public JogoRodada getItem(int position) {
-        return list.get(position);
-    }
+//    @Nullable
+//    @Override
+//    public JogoRodada getItem(int position) {
+//        return list.get(position);
+//    }
 }

@@ -25,10 +25,13 @@ import android.widget.Toast;
 
 import com.example.patri.appbolaoprojeto.CustomAdapter.ArrayAdapterClassificacao;
 import com.example.patri.appbolaoprojeto.CustomAdapter.ArrayAdapterJogoRodada;
+import com.example.patri.appbolaoprojeto.DB.DBJogoRodada;
 import com.example.patri.appbolaoprojeto.Entity.Classificacao;
 import com.example.patri.appbolaoprojeto.Entity.Equipe;
 import com.example.patri.appbolaoprojeto.Entity.JogoRodada;
+import com.example.patri.appbolaoprojeto.WS.WSGetJogoRodada;
 import com.google.gson.Gson;
+import com.orm.SugarRecord;
 
 import org.json.JSONArray;
 import org.ksoap2.SoapEnvelope;
@@ -71,58 +74,21 @@ public class Palpitar1Activity extends AppCompatActivity {
         setContentView(R.layout.activity_palpitar1);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
-
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
-
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
-
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         for (int i=0; i<38; i++){
             tabLayout.addTab(tabLayout.newTab().setText("Rodada "+(i+1)));
         }
-
         mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager));
-
-        loadListJogoPalpite.start();
+        WSGetJogoRodada.getJogoRodadaList();
 
     }
-
-    Thread loadListJogoPalpite = new Thread(new Runnable() {
-        @Override
-        public void run() {
-            try  {
-                SoapObject request = new SoapObject(NAMESPACE,URL_LIST_JOGO_RODADA);
-                request.addProperty("nrRodada", "1");//parâmetro
-                SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
-                envelope.setOutputSoapObject(request);
-                HttpTransportSE androidHttpTransport = new HttpTransportSE(URL);
-                try {
-                    androidHttpTransport.call(SOAP_ACTION + URL_LIST_JOGO_RODADA, envelope);
-                    SoapPrimitive resultsRequestSOAP = (SoapPrimitive) envelope.getResponse();
-                    final String docsaida = resultsRequestSOAP.toString();
-                    JSONArray jsonArray = new JSONArray(docsaida);
-                    for (int i=0; i < jsonArray.length(); i++) {
-                        JogoRodada jogoRodada = new Gson().fromJson(jsonArray.get(i).toString(), JogoRodada.class); //banco
-                        jogoRodadaList.add(jogoRodada);
-                    };
-                } catch (Exception e) {
-                    e.printStackTrace();
-                } finally {
-                    loadListJogoPalpite.interrupt();
-                }
-            } catch (Exception e) {
-                e.printStackTrace();
-            } finally {
-                loadListJogoPalpite.interrupt();
-            }
-        }
-    });
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -169,15 +135,12 @@ public class Palpitar1Activity extends AppCompatActivity {
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_palpitar1, container, false);
-            //TextView textView = (TextView) rootView.findViewById(R.id.section_label);
-            //textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
-
+            int aux1 = getArguments().getInt(ARG_SECTION_NUMBER); // representa a rodada
             ListView listView = (ListView) rootView.findViewById(R.id.listPalpite);
-
-            adapter = new ArrayAdapterJogoRodada(getContext(), R.layout.layout_item_list_palpite, jogoRodadaList);
+            adapter = new ArrayAdapterJogoRodada(getContext(), R.layout.layout_item_list_palpite, (List<JogoRodada>) DBJogoRodada.dbJogoRodada.get(aux1));
+            //dbjogorodada retorna por posição informada, uma lista com 10 jogos
             adapter.setDropDownViewResource(R.layout.layout_item_list_classificacao);
             listView.setAdapter(adapter);
-
             return rootView;
         }
     }
