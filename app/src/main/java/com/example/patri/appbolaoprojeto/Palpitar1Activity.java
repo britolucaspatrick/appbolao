@@ -50,22 +50,7 @@ import static com.example.patri.appbolaoprojeto.WS.WSConstantes.URL_LIST_JOGO_RO
 
 public class Palpitar1Activity extends AppCompatActivity {
 
-    public static List<JogoRodada> jogoRodadaList = new ArrayList<>();
-    public ArrayAdapter<Classificacao> adapter;
-
-    /**
-     * The {@link android.support.v4.view.PagerAdapter} that will provide
-     * fragments for each of the sections. We use a
-     * {@link FragmentPagerAdapter} derivative, which will keep every
-     * loaded fragment in memory. If this becomes too memory intensive, it
-     * may be best to switch to a
-     * {@link android.support.v4.app.FragmentStatePagerAdapter}.
-     */
     private SectionsPagerAdapter mSectionsPagerAdapter;
-
-    /**
-     * The {@link ViewPager} that will host the section contents.
-     */
     private ViewPager mViewPager;
 
     @Override
@@ -74,10 +59,7 @@ public class Palpitar1Activity extends AppCompatActivity {
         setContentView(R.layout.activity_palpitar1);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
-        // Create the adapter that will return a fragment for each of the three
-        // primary sections of the activity.
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
-        // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
@@ -86,15 +68,11 @@ public class Palpitar1Activity extends AppCompatActivity {
         }
         mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager));
-        WSGetJogoRodada.getJogoRodadaList();
 
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         switch (item.getItemId()){
             case android.R.id.home:
                 startActivity(new Intent(this, MainActivity.class));
@@ -105,24 +83,14 @@ public class Palpitar1Activity extends AppCompatActivity {
         return true;
     }
 
-    /**
-     * A placeholder fragment containing a simple view.
-     */
     public static class PlaceholderFragment extends Fragment {
-        /**
-         * The fragment argument representing the section number for this
-         * fragment.
-         */
+
         private static final String ARG_SECTION_NUMBER = "section_number";
         private ArrayAdapterJogoRodada adapter;
 
         public PlaceholderFragment() {
         }
 
-        /**
-         * Returns a new instance of this fragment for the given section
-         * number.
-         */
         public static PlaceholderFragment newInstance(int sectionNumber) {
             PlaceholderFragment fragment = new PlaceholderFragment();
             Bundle args = new Bundle();
@@ -135,20 +103,15 @@ public class Palpitar1Activity extends AppCompatActivity {
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_palpitar1, container, false);
-            int aux1 = getArguments().getInt(ARG_SECTION_NUMBER); // representa a rodada
+            int aux1 = getArguments().getInt(ARG_SECTION_NUMBER);
             ListView listView = (ListView) rootView.findViewById(R.id.listPalpite);
-            adapter = new ArrayAdapterJogoRodada(getContext(), R.layout.layout_item_list_palpite,DBJogoRodada.dbJogoRodada.get(aux1));
-            //dbjogorodada retorna por posição informada, uma lista com 10 jogos
+            adapter = new ArrayAdapterJogoRodada(getContext(), R.layout.layout_item_list_palpite, WSGetJogoRodada.getJogoRodadaList(aux1));
             adapter.setDropDownViewResource(R.layout.layout_item_list_classificacao);
             listView.setAdapter(adapter);
             return rootView;
         }
     }
 
-    /**
-     * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
-     * one of the sections/tabs/pages.
-     */
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
         public SectionsPagerAdapter(FragmentManager fm) {
@@ -157,14 +120,11 @@ public class Palpitar1Activity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
-            // getItem is called to instantiate the fragment for the given page.
-            // Return a PlaceholderFragment (defined as a static inner class below).
             return PlaceholderFragment.newInstance(position + 1);
         }
 
         @Override
         public int getCount() {
-            // Show 38 total pages.
             return 38;
         }
     }

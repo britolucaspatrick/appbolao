@@ -15,6 +15,7 @@ import com.example.patri.appbolaoprojeto.Entity.Classificacao;
 import com.example.patri.appbolaoprojeto.Entity.Equipe;
 import com.example.patri.appbolaoprojeto.Entity.JogoRodada;
 import com.example.patri.appbolaoprojeto.R;
+import com.example.patri.appbolaoprojeto.WS.WSGetEquipe;
 
 import org.w3c.dom.Text;
 
@@ -32,14 +33,10 @@ public class ArrayAdapterJogoRodada extends ArrayAdapter<JogoRodada> {
         View linha = layoutInflater.inflate(R.layout.layout_item_list_palpite, parent, false);
         TextView tvTime1 = linha.findViewById(R.id.tvTime1);
         TextView tvTime2 = linha.findViewById(R.id.tvTime2);
-        for (Equipe eq: ClassbrasileiraoActivity.equipeList) {
-            if (eq.getCdEquipe().equals(list.get(position).getCdEquipe1())) {
-                tvTime1.setText(eq.getNmComum());
-            }
-            if (eq.getCdEquipe().equals(list.get(position).getCdEquipe2())) {
-                tvTime2.setText(eq.getNmComum());
-            }
-        }
+
+        tvTime1.setText(WSGetEquipe.getNmComumEquipe(Integer.parseInt(list.get(position).getCdEquipe1())));
+        tvTime2.setText(WSGetEquipe.getNmComumEquipe(Integer.parseInt(list.get(position).getCdEquipe2())));
+
         return linha;
     }
 
@@ -54,19 +51,14 @@ public class ArrayAdapterJogoRodada extends ArrayAdapter<JogoRodada> {
         this.context = context;
     }
 
-    //@Override
-    //public int getCount() {
-      //  return list.;
-    //}
-
     @Override
     public int getPosition(@Nullable JogoRodada item) {
         return super.getPosition(item);
     }
 
-//    @Nullable
-//    @Override
-//    public JogoRodada getItem(int position) {
-//        return list.get(position);
-//    }
+   @Nullable
+    @Override
+    public JogoRodada getItem(int position) {
+        return list.get(position);
+    }
 }

@@ -46,12 +46,7 @@ public class ArrayAdapterClassificacao extends ArrayAdapter<Classificacao>{
         TextView tvSaldoGol = linha.findViewById(R.id.tvSaldoGol);
         TextView tvPontos = linha.findViewById(R.id.tvPontos);
 
-        for (Equipe eq: ClassbrasileiraoActivity.equipeList) {
-            if (eq.getCdEquipe().equals(list.get(position).getCdEquipe())) {
-                tvTime.setText(eq.getNmComum());
-            }
-        }
-
+        tvTime.setText(WSGetEquipe.getNmComumEquipe(Integer.parseInt(list.get(position).getCdEquipe())));
         tvJogoJgado.setText(list.get(position).getJogos().getQtTotal().toString());
         tvVitoria.setText(list.get(position).getVitoria().getQtTotal().toString());
         tvDerota.setText(list.get(position).getDerrota().getQtTotal().toString());
@@ -74,11 +69,6 @@ public class ArrayAdapterClassificacao extends ArrayAdapter<Classificacao>{
     }
 
     @Override
-    public int getCount() {
-        return list.size();
-    }
-
-    @Override
     public int getPosition(@Nullable Classificacao item) {
         return super.getPosition(item);
     }
@@ -88,4 +78,5 @@ public class ArrayAdapterClassificacao extends ArrayAdapter<Classificacao>{
     public Classificacao getItem(int position) {
         return list.get(position);
     }
+
 }
