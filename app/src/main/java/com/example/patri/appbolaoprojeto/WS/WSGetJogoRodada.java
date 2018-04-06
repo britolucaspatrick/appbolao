@@ -19,7 +19,7 @@ import static com.example.patri.appbolaoprojeto.WS.WSConstantes.URL_LIST_JOGO_RO
 public class WSGetJogoRodada {
     private static List<JogoRodada> listJogoRodada;
     public static List<JogoRodada> getJogoRodadaList(final int param) {
-        Thread thread = new Thread(new Runnable() {
+        new Thread(new Runnable() {
             @Override
             public void run() {
                 try {
@@ -50,8 +50,7 @@ public class WSGetJogoRodada {
                     e.printStackTrace();
                 }
             }
-        });
-        thread.start();
+        }).start();
         return listJogoRodada;
     }
 }

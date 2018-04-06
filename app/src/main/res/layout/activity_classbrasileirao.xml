@@ -6,8 +6,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginStart="@dimen/vinte_dp"
     tools:context="com.example.patri.appbolaoprojeto.ClassbrasileiraoActivity">
+
+    <RelativeLayout
+        android:id="@+id/lyLoading"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:gravity="center">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"/>
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"

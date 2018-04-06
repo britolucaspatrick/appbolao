@@ -33,14 +33,16 @@ import static com.example.patri.appbolaoprojeto.WS.WSConstantes.URL_LIST_JOGO_RO
 
 public class WSGetEquipe {
 
+    private static String nmComumEquipe = "";
+
     public static String getNmComumEquipe(final int cdEquipe){
-        Thread thread = new Thread(new Runnable() {
+        new Thread(new Runnable() {
             @Override
             public void run() {
                 try {
                     try  {
                         SoapObject request = new SoapObject(NAMESPACE,URL_EQUIPE);
-                        request.addProperty("nrRodada", cdEquipe);//parâmetro
+                        request.addProperty("cdEquipe", cdEquipe);//parâmetro
                         SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
                         envelope.setOutputSoapObject(request);
                         HttpTransportSE androidHttpTransport = new HttpTransportSE(URL);
@@ -49,10 +51,8 @@ public class WSGetEquipe {
                             SoapPrimitive resultsRequestSOAP = (SoapPrimitive) envelope.getResponse();
                             final String docsaida = resultsRequestSOAP.toString();
                             JSONArray jsonArray = new JSONArray(docsaida);
-                            for (int y=0; y < jsonArray.length(); y++) {
-                                Equipe equipe = new Gson().fromJson(jsonArray.get(y).toString(), Equipe.class);
-                                //retorno o nome da equipe com base no cd informado por paramentro
-                            };
+                            Equipe equipe = new Gson().fromJson(jsonArray.toString(), Equipe.class);
+                            nmComumEquipe = equipe.getNmComum();
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
@@ -63,9 +63,8 @@ public class WSGetEquipe {
                     e.printStackTrace();
                 }
             }
-        });
-        thread.start();
-        return "";
+        }).start();
+        return nmComumEquipe;
     }
 
     //não implementado funcionalmente

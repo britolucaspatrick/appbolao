@@ -4,13 +4,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.patri.appbolaoprojeto.CustomAdapter.ArrayAdapterClassificacao;
 import com.example.patri.appbolaoprojeto.Entity.Classificacao;
 import com.example.patri.appbolaoprojeto.Entity.Equipe;
+import com.example.patri.appbolaoprojeto.Entity.JogoRodada;
 import com.example.patri.appbolaoprojeto.WS.WSGetClassificacao;
 import com.example.patri.appbolaoprojeto.WS.WSGetEquipe;
 import com.google.gson.Gson;
@@ -33,10 +37,12 @@ import java.util.List;
 import static com.example.patri.appbolaoprojeto.WS.WSConstantes.*;
 
 
-public class ClassbrasileiraoActivity extends AppCompatActivity{
+public class ClassbrasileiraoActivity extends AppCompatActivity implements Runnable{
 
     private ArrayAdapter<Classificacao> adapter;
     private ListView listClassificacao;
+
+    private RelativeLayout lyLoading;
 
     private TextView tvTime;
     private TextView tvJogoJogado;
@@ -52,16 +58,47 @@ public class ClassbrasileiraoActivity extends AppCompatActivity{
         setContentView(R.layout.activity_classbrasileirao);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
+
         findComponents();
+        lyLoading.setVisibility(View.VISIBLE);
+
+        new Thread(this).start();
+
         loadClassList();
     }
 
+    @Override
+    public void run() {
+        getListClassificacao();
+    }
+
+    private void getListClassificacao() {
+        SoapObject soap = new SoapObject(NAMESPACE, URL_LIST_CLASSIFICACAO);
+        SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(
+                SoapEnvelope.VER11);
+        envelope.setOutputSoapObject(soap);
+        HttpTransportSE httpTransport = new HttpTransportSE(URL);
+        try {
+            httpTransport.call("", envelope);
+            Object o = envelope.getResponse();
+            final String dados = o.toString();
+            JSONArray jsonArray = new JSONArray(dados);
+
+        } catch (Exception e) {
+
+        }
+
+    }
+
     private void loadClassList() {
-        adapter = new ArrayAdapterClassificacao(this, R.layout.layout_item_list_classificacao, WSGetClassificacao.getClassificacaoList());
+        adapter = new ArrayAdapterClassificacao(this, R.layout.layout_item_list_classificacao, WSGetClassificacao.listClassificacao);
         adapter.setDropDownViewResource(R.layout.layout_item_list_classificacao);
+        lyLoading.setVisibility(View.GONE);
         listClassificacao.setAdapter(adapter);
     }
+
     private void findComponents() {
+        lyLoading = findViewById(R.id.lyLoading);
         listClassificacao = findViewById(R.id.listClassificacao);
         tvTime = (TextView) findViewById(R.id.tvTime);
         tvJogoJogado = (TextView) findViewById(R.id.tvJogoJogado);
@@ -89,4 +126,8 @@ public class ClassbrasileiraoActivity extends AppCompatActivity{
         return;
     }
 
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+
+    }
 }

@@ -46,7 +46,9 @@ public class ArrayAdapterClassificacao extends ArrayAdapter<Classificacao>{
         TextView tvSaldoGol = linha.findViewById(R.id.tvSaldoGol);
         TextView tvPontos = linha.findViewById(R.id.tvPontos);
 
-        tvTime.setText(WSGetEquipe.getNmComumEquipe(Integer.parseInt(list.get(position).getCdEquipe())));
+        //em dev
+        //tvTime.setText(WSGetEquipe.getNmComumEquipe(Integer.parseInt(list.get(position).getCdEquipe())));
+        tvTime.setText("");
         tvJogoJgado.setText(list.get(position).getJogos().getQtTotal().toString());
         tvVitoria.setText(list.get(position).getVitoria().getQtTotal().toString());
         tvDerota.setText(list.get(position).getDerrota().getQtTotal().toString());
