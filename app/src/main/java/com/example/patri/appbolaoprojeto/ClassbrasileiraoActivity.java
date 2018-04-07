@@ -41,9 +41,9 @@ public class ClassbrasileiraoActivity extends AppCompatActivity implements Runna
 
     private ArrayAdapter<Classificacao> adapter;
     private ListView listClassificacao;
+    public static List<Classificacao> lista = new ArrayList<>();;
 
     private RelativeLayout lyLoading;
-
     private TextView tvTime;
     private TextView tvJogoJogado;
     private TextView tvVitoria;
@@ -58,13 +58,10 @@ public class ClassbrasileiraoActivity extends AppCompatActivity implements Runna
         setContentView(R.layout.activity_classbrasileirao);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
-
         findComponents();
         lyLoading.setVisibility(View.VISIBLE);
-
         new Thread(this).start();
 
-        loadClassList();
     }
 
     @Override
@@ -79,22 +76,20 @@ public class ClassbrasileiraoActivity extends AppCompatActivity implements Runna
         envelope.setOutputSoapObject(soap);
         HttpTransportSE httpTransport = new HttpTransportSE(URL);
         try {
-            httpTransport.call("", envelope);
-            Object o = envelope.getResponse();
-            final String dados = o.toString();
+            httpTransport.call(SOAP_ACTION+URL_LIST_CLASSIFICACAO, envelope);
+            SoapPrimitive resultsRequestSOAP = (SoapPrimitive) envelope.getResponse();
+            final String dados = resultsRequestSOAP.toString();
             JSONArray jsonArray = new JSONArray(dados);
-
+            for (int i = 0; i < jsonArray.length(); i++) {
+                lista.add(new Gson().fromJson(jsonArray.get(i).toString(), Classificacao.class));
+            }
         } catch (Exception e) {
-
+            e.printStackTrace();
         }
-
-    }
-
-    private void loadClassList() {
-        adapter = new ArrayAdapterClassificacao(this, R.layout.layout_item_list_classificacao, WSGetClassificacao.listClassificacao);
+        adapter = new ArrayAdapterClassificacao(this, R.layout.layout_item_list_classificacao, lista);
         adapter.setDropDownViewResource(R.layout.layout_item_list_classificacao);
-        lyLoading.setVisibility(View.GONE);
         listClassificacao.setAdapter(adapter);
+        lyLoading.setVisibility(View.GONE);
     }
 
     private void findComponents() {

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\DevTecnoAliance\\Documents\\GitHub\\appbolao\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-te\\values-te.xml",
+            "outputFile": "C:\\Users\\patri\\Desktop\\Projeto\\appbolao\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-te\\values-te.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\DevTecnoAliance\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\290c5b09d79aa8e9679d38c83eca0656\\res\\values-te\\values.xml",
+                    "source": "C:\\Users\\patri\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\3fb916985ba02967e80242d7780d86b5\\res\\values-te\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\DevTecnoAliance\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\4ff5605f04221276aed0a31558486b76\\res\\values-te\\values-te.xml",
+                    "source": "C:\\Users\\patri\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\c86f2b448f235e51774ef0379a2e651f\\res\\values-te\\values-te.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\DevTecnoAliance\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.8.0.aar\\eb59e7df2fe6d7bd97e1eb32d6678c3d\\res\\values-te\\values.xml",
+                    "source": "C:\\Users\\patri\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.8.0.aar\\8780575667dc66b67879bac0f626689e\\res\\values-te\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

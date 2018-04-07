@@ -64,10 +64,10 @@ public class ArrayAdapterClassificacao extends ArrayAdapter<Classificacao>{
         super.setDropDownViewResource(resource);
     }
 
-    public ArrayAdapterClassificacao(@NonNull Context context, int resource, List<Classificacao> list) {
-        super(context, resource);
+    public ArrayAdapterClassificacao(@NonNull Runnable context, int resource, List<Classificacao> list) {
+        super((Context) context, resource);
         this.list = list;
-        this.context = context;
+        this.context = (Context) context;
     }
 
     @Override

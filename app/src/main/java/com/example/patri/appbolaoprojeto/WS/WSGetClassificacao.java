@@ -16,6 +16,7 @@ import java.util.List;
 import static com.example.patri.appbolaoprojeto.WS.WSConstantes.NAMESPACE;
 import static com.example.patri.appbolaoprojeto.WS.WSConstantes.SOAP_ACTION;
 import static com.example.patri.appbolaoprojeto.WS.WSConstantes.URL;
+import static com.example.patri.appbolaoprojeto.WS.WSConstantes.URL_EQUIPE;
 import static com.example.patri.appbolaoprojeto.WS.WSConstantes.URL_LIST_CLASSIFICACAO;
 
 /**
@@ -32,7 +33,6 @@ public class WSGetClassificacao {
             SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
             envelope.setOutputSoapObject(request);
             try {
-
                 SoapPrimitive resultsRequestSOAP = (SoapPrimitive) envelope.getResponse();
                 final String dados = resultsRequestSOAP.toString();
                 JSONArray jsonArray = new JSONArray(dados);
