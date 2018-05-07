@@ -1,4 +1,4 @@
-package com.example.patri.appbolaoprojeto;
+package com.example.patri.appbolaoprojeto.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;

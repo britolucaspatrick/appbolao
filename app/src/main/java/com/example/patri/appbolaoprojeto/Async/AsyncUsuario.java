@@ -7,7 +7,7 @@ import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.widget.Toast;
 
-import com.example.patri.appbolaoprojeto.MainActivity;
+import com.example.patri.appbolaoprojeto.Activity.MainActivity;
 import com.example.patri.appbolaoprojeto.Validation.LoginValidation;
 
 import java.io.BufferedReader;
@@ -16,9 +16,6 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-/**
- * Created by Diogo Souza on 21/02/2016.
- */
 public class AsyncUsuario extends AsyncTask<String, String, String> {
 
     private LoginValidation loginValidation;

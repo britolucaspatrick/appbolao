@@ -10,14 +10,9 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 
-import com.example.patri.appbolaoprojeto.ClassbrasileiraoActivity;
-import com.example.patri.appbolaoprojeto.Entity.Classificacao;
-import com.example.patri.appbolaoprojeto.Entity.Equipe;
 import com.example.patri.appbolaoprojeto.Entity.JogoRodada;
 import com.example.patri.appbolaoprojeto.R;
 import com.example.patri.appbolaoprojeto.WS.WSGetEquipe;
-
-import org.w3c.dom.Text;
 
 import java.util.List;
 

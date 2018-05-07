@@ -1,20 +1,18 @@
-package com.example.patri.appbolaoprojeto;
+package com.example.patri.appbolaoprojeto.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-import android.view.View;
 
-public class RegisterActivity extends AppCompatActivity {
+import com.example.patri.appbolaoprojeto.R;
+
+public class RodadaspessoaisActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.activity_rodadaspessoais);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
 
@@ -23,7 +21,7 @@ public class RegisterActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case android.R.id.home:
-                startActivity(new Intent(this, RegisterActivity.class));
+                startActivity(new Intent(this, MainActivity.class));
                 finishAffinity();
                 break;
             default:break;
@@ -32,7 +30,7 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     public void onBackPressed() {
-        startActivity(new Intent(this, LoginActivity.class));
+        startActivity(new Intent(this,MainActivity.class));
         finishAffinity();
         return;
     }

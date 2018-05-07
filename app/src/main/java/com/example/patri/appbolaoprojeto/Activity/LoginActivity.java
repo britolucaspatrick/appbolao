@@ -1,4 +1,4 @@
-package com.example.patri.appbolaoprojeto;
+package com.example.patri.appbolaoprojeto.Activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.patri.appbolaoprojeto.R;
 import com.example.patri.appbolaoprojeto.Validation.LoginValidation;
 import com.example.patri.appbolaoprojeto.WS.WSLoginService;
 
@@ -39,10 +40,10 @@ public class LoginActivity extends AppCompatActivity {
             finish();
         }
 
-        //edtLogin = (EditText) findViewById(R.id.edtLogin);
-        //edtSenha = (EditText) findViewById(R.id.edtSenha);
+        edtLogin = (EditText) findViewById(R.id.etUserLogin);
+        edtSenha = (EditText) findViewById(R.id.etPasswordLogin);
 
-        //btnLogar = (Button) findViewById(R.id.btnLogar);
+        btnLogar = (Button) findViewById(R.id.btEnviar);
 
         btnLogar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,7 +57,6 @@ public class LoginActivity extends AppCompatActivity {
                 validation.setEdtSenha(edtSenha);
                 validation.setLogin(login);
                 validation.setSenha(senha);
-
                 WSLoginService.validarCamposLogin(validation);
             }
         });

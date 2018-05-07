@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.patri.appbolaoprojeto.MyaccountActivity"
+    tools:context="com.example.patri.appbolaoprojeto.Activity.MyaccountActivity"
     tools:showIn="@layout/activity_myaccount"
     android:layout_marginStart='@dimen/vinte_dp'
     android:layout_marginEnd='@dimen/vinte_dp'>

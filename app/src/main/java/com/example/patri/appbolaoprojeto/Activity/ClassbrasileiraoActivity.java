@@ -1,4 +1,4 @@
-package com.example.patri.appbolaoprojeto;
+package com.example.patri.appbolaoprojeto.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,14 +9,10 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.patri.appbolaoprojeto.CustomAdapter.ArrayAdapterClassificacao;
 import com.example.patri.appbolaoprojeto.Entity.Classificacao;
-import com.example.patri.appbolaoprojeto.Entity.Equipe;
-import com.example.patri.appbolaoprojeto.Entity.JogoRodada;
-import com.example.patri.appbolaoprojeto.WS.WSGetClassificacao;
-import com.example.patri.appbolaoprojeto.WS.WSGetEquipe;
+import com.example.patri.appbolaoprojeto.R;
 import com.google.gson.Gson;
 
 //import com.google.gson.Gson;
@@ -103,7 +99,6 @@ public class ClassbrasileiraoActivity extends AppCompatActivity implements Runna
         tvSaldoGol = (TextView) findViewById(R.id.tvSaldoGol);
         tvPontos = (TextView) findViewById(R.id.tvPontos);
     }
-
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case android.R.id.home:

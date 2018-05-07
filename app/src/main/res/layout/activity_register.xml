@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.patri.appbolaoprojeto.RegisterActivity"
+    tools:context="com.example.patri.appbolaoprojeto.Activity.RegisterActivity"
     android:layout_marginStart='@dimen/vinte_dp'
     android:layout_marginEnd='@dimen/vinte_dp'>
 

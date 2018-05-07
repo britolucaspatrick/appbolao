@@ -9,14 +9,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.example.patri.appbolaoprojeto.ClassbrasileiraoActivity;
-import com.example.patri.appbolaoprojeto.Entity.Equipe;
 import com.example.patri.appbolaoprojeto.R;
 import com.example.patri.appbolaoprojeto.Entity.Classificacao;
-import com.example.patri.appbolaoprojeto.CustomAdapter.ArrayAdapterEquipe;
-import com.example.patri.appbolaoprojeto.WS.WSGetEquipe;
-import com.orm.query.Condition;
-import com.orm.query.Select;
 
 import java.util.List;
 

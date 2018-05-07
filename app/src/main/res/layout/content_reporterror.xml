@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.patri.appbolaoprojeto.ReporterrorActivity"
+    tools:context="com.example.patri.appbolaoprojeto.Activity.ReporterrorActivity"
     tools:showIn="@layout/activity_reporterror"
     android:layout_marginStart='@dimen/vinte_dp'
     android:layout_marginEnd='@dimen/vinte_dp'

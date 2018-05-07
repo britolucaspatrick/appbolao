@@ -4,7 +4,7 @@
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.patri.appbolaoprojeto.Palpitar1Activity$PlaceholderFragment">
+    tools:context="com.example.patri.appbolaoprojeto.Activity.Palpitar1Activity$PlaceholderFragment">
 
     <ListView
         android:id="@+id/listPalpite"

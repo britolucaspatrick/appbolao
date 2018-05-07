@@ -1,11 +1,8 @@
-package com.example.patri.appbolaoprojeto;
+package com.example.patri.appbolaoprojeto.Activity;
 
 import android.content.Intent;
 import android.support.design.widget.TabLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -13,40 +10,15 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
 
-import com.example.patri.appbolaoprojeto.CustomAdapter.ArrayAdapterClassificacao;
 import com.example.patri.appbolaoprojeto.CustomAdapter.ArrayAdapterJogoRodada;
-import com.example.patri.appbolaoprojeto.DB.DBJogoRodada;
-import com.example.patri.appbolaoprojeto.Entity.Classificacao;
-import com.example.patri.appbolaoprojeto.Entity.Equipe;
-import com.example.patri.appbolaoprojeto.Entity.JogoRodada;
+import com.example.patri.appbolaoprojeto.R;
 import com.example.patri.appbolaoprojeto.WS.WSGetJogoRodada;
-import com.google.gson.Gson;
-import com.orm.SugarRecord;
-
-import org.json.JSONArray;
-import org.ksoap2.SoapEnvelope;
-import org.ksoap2.serialization.SoapObject;
-import org.ksoap2.serialization.SoapPrimitive;
-import org.ksoap2.serialization.SoapSerializationEnvelope;
-import org.ksoap2.transport.HttpTransportSE;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import static com.example.patri.appbolaoprojeto.WS.WSConstantes.NAMESPACE;
-import static com.example.patri.appbolaoprojeto.WS.WSConstantes.SOAP_ACTION;
-import static com.example.patri.appbolaoprojeto.WS.WSConstantes.URL;
-import static com.example.patri.appbolaoprojeto.WS.WSConstantes.URL_LIST_JOGO_RODADA;
 
 public class Palpitar1Activity extends AppCompatActivity {
 
